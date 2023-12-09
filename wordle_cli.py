@@ -68,7 +68,7 @@ class Game:
     def print_log(self):
         for guess in self.guess_list:
             print(self.log_row(guess))
-        if self.tries < 5 and self.hint:
+        if self.tries <= 5 and self.hint:
             print(f'Доступные буквы: {self.alphabet}')
 
     def log_row(self,guess):
